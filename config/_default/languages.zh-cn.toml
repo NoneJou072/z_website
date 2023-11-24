@@ -1,0 +1,28 @@
+languageCode = "zh-cn"
+languageName = "Simplified Chinese"
+weight = 1
+title = "海豚的博客"
+
+[params]
+  displayName = "CN"
+  isoCode = "zh-cn"
+  rtl = false
+  dateFormat = "2 January 2006"
+  logo = "img/logo.png"
+  secondaryLogo = "img/secondary-logo.png"
+  description = "My awesome website"
+  # copyright = "Copy, _right?_ :thinking_face:"
+
+[author]
+  name = "圆润的海豚"
+  image = "img/logo.jpg"
+  headline = "欢迎来到我的个人博客！我是一名机械电子工程专业, 机器人算法方向的在读研究生。在这里，我会记录一些个人的学习笔记，以协作臂仿真开发、深度强化学习为主，也会写下一些我的杂谈与随想。"
+  bio = "A little bit about you"
+  links = [
+    { email = "mailto:jou072@126.com" },
+    { github = "https://github.com/username" },
+    { instagram = "https://instagram.com/username" },
+    { telegram = "https://t.me/username" },
+    { x-twitter = "https://twitter.com/username" },
+    { youtube = "https://youtube.com/username" },
+  ]
