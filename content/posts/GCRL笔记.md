@@ -13,14 +13,18 @@ featuredImage:
 draft: false
 ---
 
+{{< katex >}}
+
 ## GCRL with Sub-goal Selection / Generation
 > 本文翻译与参考自: [Goal-Conditioned Reinforcement Learning: Problems and Solutions](https://arxiv.org/pdf/2201.08299.pdf)
 
 由于难以实现长期目标，可以把目标分割成许多短期目标来帮助智能体到达长期目标。
 在期望目标被替换后收集经验，就是将环境的目标分布从$f$改成$p_g$，目标函数变成
+
 $$
 J(\pi)=\mathbb{E}_{\textstyle{s_{t+1}\sim \mathcal{T}(\cdot\mid s_t,a_t),\atop a_{t} \sim \pi(\cdot\mid s_{t},g),g\sim f}}\left[\sum_t \gamma^tr(s_t,a_t,g)\right]
 $$
+
 $f$可以是一个规则，能够从过去的经验中选择$g$，或者是根据某种准则学习出的一个函数。
 
 下面介绍几种选择子目标的方法。

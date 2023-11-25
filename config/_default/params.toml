@@ -127,9 +127,9 @@ defaultBackgroundImage = "img/xingtong.jpg" # used as default for background ima
   # domain = "llama.yoursite.com"
 
 [buymeacoffee]
-  identifier = ""
+  identifier = "jou072"
   globalWidget = true
-  globalWidgetMessage = "Hello"
+  globalWidgetMessage = "Buy me a coffee?"
   globalWidgetColor = "#FFDD00"
   globalWidgetPosition = "Right"
 

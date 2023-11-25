@@ -22,7 +22,6 @@ title = "海豚的博客"
     { email = "mailto:jou072@126.com" },
     { github = "https://github.com/username" },
     { instagram = "https://instagram.com/username" },
-    { telegram = "https://t.me/username" },
-    { x-twitter = "https://twitter.com/username" },
-    { youtube = "https://youtube.com/username" },
+    { sina-weibo = "https://twitter.com/username" },
+    { bilibili-fill = "https://space.bilibili.com/19446641" },
   ]
