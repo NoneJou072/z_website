@@ -4,7 +4,7 @@ description: 关于 Goal-Conditioned RL 中子目标选择的问题
 toc: true
 authors:
   - Haoran Zhou
-tags:
+tags: ["rl"]
 categories:
 series:
 date: '2023-11-21T13:11:22+08:00'

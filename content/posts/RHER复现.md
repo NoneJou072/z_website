@@ -51,8 +51,8 @@ RHER 的 GITHUB 链接：[https://github.com/kaixindelele/RHER](https://github.c
 使用基于 pytorch 编写的 DDPG 方法进行训练时，发现奖励函数的值会先抵达 0.8 左右的成功率，之后便会降低到 0.4 左右。
 
 <center class="half">
-<img src="../../assets/actor_loss_ddpg.png" width=400/>
-<img src="../../assets/critic_loss_ddpg.png" width=400/>
+<img src="../../post_imgs/actor_loss_ddpg.png" width=400/>
+<img src="../../post_imgs/critic_loss_ddpg.png" width=400/>
 </center>
 
 在 DDPG 中，actor loss 表示负的 Q 值，actor loss 越小，Q 值越大。此时 actor loss 呈现出很大的下降趋势，critic loss 呈现很大的震荡。明显是出现 Q 值被高估的情况了。
@@ -64,19 +64,19 @@ RHER 的 GITHUB 链接：[https://github.com/kaixindelele/RHER](https://github.c
 参考自 [Y. F. Zhang: 一个AC类算法策略loss引出的思考](https://blog.csdn.net/weixin_43145941/article/details/115342794)
 
 <center class="half">
-<img src="../../assets/actor_loss_td3.png" width=400/>
-<img src="../../assets/critic_loss_td3.png" width=400/>
+<img src="../../post_imgs/actor_loss_td3.png" width=400/>
+<img src="../../post_imgs/critic_loss_td3.png" width=400/>
 </center>
 
 ## 结果对比
 下面是作者在 FetchPush-v1 环境下的结果：
 
-![Alt text](/assets/rher_fetchpush_result.png)
+![Alt text](/post_imgs/rher_fetchpush_result.png)
 
 下面是我在 FetchPush-v2 环境下的复现结果：
 
 <center class="half">
-<img src="../../assets/rher_fetch_push_success_mine.png" width=400/>
+<img src="../../post_imgs/rher_fetch_push_success_mine.png" width=400/>
 </center>
 
 可以看到，在训练时间 56min 左右时，成功率稳定在了 95% 左右，与作者的结果相差不大。

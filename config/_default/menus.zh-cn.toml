@@ -16,8 +16,11 @@
  weight = 10
 
 [[main]]
- name = "Parent"
+ name = "Resume"
  weight = 20
+#  url = "contact"
+
+#  pageRef = "contact"
 
 # [[main]]
 #  name = "example sub-menu 1"

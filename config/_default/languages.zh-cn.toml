@@ -16,8 +16,8 @@ title = "海豚的博客"
 [author]
   name = "圆润的海豚"
   image = "img/logo.jpg"
-  headline = "欢迎来到我的个人博客！我是一名机械电子工程专业, 机器人算法方向的在读研究生。在这里，我会记录一些个人的学习笔记，以协作臂仿真开发、深度强化学习为主，也会写下一些我的杂谈与随想。"
-  bio = "A little bit about you"
+  # headline = "欢迎来到我的个人博客！"
+  bio = "海阔凭鱼跃"
   links = [
     { email = "mailto:jou072@126.com" },
     { github = "https://github.com/username" },
