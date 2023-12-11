@@ -37,7 +37,7 @@ $f$可以是一个规则，能够从过去的经验中选择$g$，或者是根�
 
 ### 2. 探索意识 Exploration awareness
 由于稀疏奖励限制了策略的学习效率，我们应该提高策略的探索能力，尽可能覆盖没有遇到的目标和状态。
-在GCRL，许多研究者们提议使用子目标采样来得到一个更好的探索能力。
+在GCRL，许多研究者们提议**使用子目标采样**来得到一个更好的探索能力。
 
 * *Maximum entropy gain exploration for long horizon multi-goal reinforcement learning.* 提出采样使过去**已实现目标**的熵最大化的目标，以提高目标空间（goal space）的覆盖范围。（这一点和SAC的目的很像）
 * *State-covering self-supervised reinforcement learning.* 训练一个自监督的生成式模型来生成行为目标，该目标在过去的经验中对已实现目标进行了近似均匀的倾斜，表现为最大化**期望目标**分布的熵。
