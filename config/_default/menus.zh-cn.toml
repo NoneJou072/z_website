@@ -21,17 +21,17 @@
  weight = 20
 #  url = "contact"
 
-# [[main]]
-#  name = "example sub-menu 1"
-#  parent = "Parent"
-#  pageRef = "posts"
-#  weight = 20
+[[main]]
+ name = "leetcode"
+ parent = "Blog"
+ pageRef = "leetcode"
+ weight = 20
 
-#[[main]]
-#  name = "example sub-menu 2"
-#  parent = "Parent"
-#  pageRef = "posts"
-#  weight = 20
+[[main]]
+ name = "linux"
+ parent = "Blog"
+ pageRef = "linux"
+ weight = 30
 
 # [[subnavigation]]
 #  name = "An interesting topic"
