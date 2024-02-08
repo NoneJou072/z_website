@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Datawhale数据结构基础课程笔记-(Day3-6)分治
 description: 分治算法（Divide and Conquer）：字面上的解释是「分而治之」，就是把一个复杂的问题分成两个或更多的相同或相似的子问题，直到最后子问题可以简单的直接求解，原问题的解即子问题的解的合并。
 toc: true
@@ -11,7 +11,7 @@ date: '2023-12-18T13:11:22+08:00'
 lastmod: '2023-12-18T13:11:22+08:00'
 featuredImage:
 draft: false
----
+--- -->
 
 {{< katex >}}
 
