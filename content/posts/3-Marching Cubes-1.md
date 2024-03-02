@@ -33,7 +33,7 @@ Marching Cubes（MC）算法是一种三维重建算法，常被用于三维重�
 
 首先，我们需要将该物体细分为一个个单元格（grid），每个单元格的各个顶点和边都用一个标量来索引。
 
-​![image](/post_imgs/image-20230129232238-nnm5qqw.png)![image](/post_imgs/image-20230129232636-amem320.png)​
+​![image](/post_imgs/3-mc/image-20230129232238-nnm5qqw.png)![image](/post_imgs/3-mc/image-20230129232636-amem320.png)​
 
 接下来，我们要判断各单元格的各顶点是否在3D几何体内。在覆盖物体外围的单元格中，物体的表面会与单元格相交，将单元格的某些顶点分隔在外面，我们用 cubeindex 来表示 8 个顶点的内外情况。
 
@@ -59,7 +59,7 @@ cubeindex 包含 8 个 bit，分别表示单元格的 8 个顶点。假设第一
 
 首先设定一些参数，圆的半径`radius`​，圆心在世界中的实际坐标`center`​。我们使用7*7的网格来进行重建，其中各轴上点的数量`numPointPerAxis`​为 8，那么各轴上 cube 的数量`numVoxelPerAxis`​为`numPointPerAxis-1=7`​个，`id`​ 表示各点在网格中的的索引坐标。另外设定每个 cube 的实际长度为`cubeSize`​。在本例中，我们将网格的中心与圆心对齐，这在后面的偏置计算中会用到。
 
-​![image](/post_imgs/image-20230620235416-34ig2zr.png)​
+​![image](/post_imgs/3-mc/image-20230620235416-34ig2zr.png)​
 
 各顶点在网格中的实际坐标为 `id * cubeSize`​ ，网格中心(圆心)的实际坐标为 `numPointsPerAxis * cubeSize * 0.5`​ ，则该顶点相对圆心的偏置为：
 
@@ -120,8 +120,8 @@ int edgeTable[256]={
 
 在如下面的左图所示，在一个单元格中，假设只有点 3 在等值面外，我们容易得到 cubeindex = 0000 1000 ，对应的十进制为 8。查找表 edgeTable 得到 edgeTable[8] = 1000 0000 1100，表示边 2,3, and 11 与等值面相交（如右图所示）。
 
-​![image](/post_imgs/image-20230129232636-amem320.png)
-![image](/post_imgs/image-20230129224055-iynt5wn.png)​
+​![image](/post_imgs/3-mc/image-20230129232636-amem320.png)
+![image](/post_imgs/3-mc/image-20230129224055-iynt5wn.png)​
 
 接下来，我们通过插值的方法找出来三个相交点的坐标 P：
 
