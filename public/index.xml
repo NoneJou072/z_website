@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 圆润的海豚</copyright>
-    <lastBuildDate>Wed, 21 Feb 2024 13:11:22 +0800</lastBuildDate><atom:link href="https://nonejou072.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Feb 2024 13:11:22 +0800</lastBuildDate><atom:link href="https://nonejou072.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43; 对象</title>
+      <link>https://nonejou072.github.io/posts/12-c&#43;&#43;%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Mon, 26 Feb 2024 13:11:22 +0800</pubDate>
+      
+      <guid>https://nonejou072.github.io/posts/12-c&#43;&#43;%E5%AF%B9%E8%B1%A1/</guid>
+      <description>1.</description>
+      
+    </item>
+    
     <item>
       <title>Mixture-of-Experts in RL for Robotics</title>
       <link>https://nonejou072.github.io/posts/11-moe/</link>
@@ -79,12 +89,12 @@
     </item>
     
     <item>
-      <title>关于 Goal-Conditioned RL 中子目标选择的问题</title>
-      <link>https://nonejou072.github.io/posts/9-gcrl%E7%AC%94%E8%AE%B0/</link>
+      <title>Goal-Conditioned RL</title>
+      <link>https://nonejou072.github.io/posts/9-gcrl/</link>
       <pubDate>Tue, 21 Nov 2023 13:11:22 +0800</pubDate>
       
-      <guid>https://nonejou072.github.io/posts/9-gcrl%E7%AC%94%E8%AE%B0/</guid>
-      <description>GCRL with Sub-goal Selection / Generation # 本文翻译与参考自: Goal-Conditioned Reinforcement Learning: Problems and Solutions</description>
+      <guid>https://nonejou072.github.io/posts/9-gcrl/</guid>
+      <description>传统的强化学习算法都局限在单个目标上，训练好的算法难以完成这个目标外的其他目标。以机械臂操作为例，采用单一策略只能训练抓取同一个位置的物体。对于不同的目标位置，要训练多个策略。另外这类环境通常依赖于人工进行奖励塑形，而设计一个好的奖励函数通常很困难。因此最近的研究更希望使用稀疏的奖励，只有当成功完成任务后才能够获得奖励，在其他的时刻将不会得到奖励。然而智能体在探索过程中，大部分时间内都无法完成任务，导致有价值的样本数目非常少，智能体需要更多的时间进行探索，导致指数级的样本复杂度。</description>
       
     </item>
     
@@ -139,6 +149,16 @@
     </item>
     
     <item>
+      <title>Tree-structured Parzen Estimator（TPE）</title>
+      <link>https://nonejou072.github.io/posts/13-tpe/</link>
+      <pubDate>Wed, 29 Mar 2023 13:11:22 +0800</pubDate>
+      
+      <guid>https://nonejou072.github.io/posts/13-tpe/</guid>
+      <description>Brief Introduction # TPE（Tree-structured Parzen Estimator），是一种基于树结构的贝叶斯优化算法，用于解决黑盒函数的全局最优化问题。</description>
+      
+    </item>
+    
+    <item>
       <title>Marching Cubes -1 原理介绍</title>
       <link>https://nonejou072.github.io/posts/3-marching-cubes-1/</link>
       <pubDate>Sun, 29 Jan 2023 22:07:25 +0800</pubDate>
@@ -170,16 +190,6 @@
     
     <item>
       <title></title>
-      <link>https://nonejou072.github.io/posts/c&#43;&#43;%E5%AF%B9%E8%B1%A1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://nonejou072.github.io/posts/c&#43;&#43;%E5%AF%B9%E8%B1%A1/</guid>
-      <description>1.</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://nonejou072.github.io/posts/drl%E8%B0%83%E5%8F%82%E6%96%B9%E6%B3%95%E4%B8%8E%E6%80%9D%E8%80%83/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -200,31 +210,11 @@
     
     <item>
       <title></title>
-      <link>https://nonejou072.github.io/posts/latex%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://nonejou072.github.io/posts/latex%E7%AC%94%E8%AE%B0/</guid>
-      <description>调整caption图表标题行间距、字体大小、左对齐 # refer: latex调整caption图表标题行间距、字体大小、左对齐</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://nonejou072.github.io/posts/leetcode/datawhale%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E5%88%86%E6%B2%BB/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nonejou072.github.io/posts/leetcode/datawhale%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0-%E5%88%86%E6%B2%BB/</guid>
       <description>分治算法（Divide and Conquer）：字面上的解释是「分而治之」，就是把一个复杂的问题分成两个或更多的相同或相似的子问题，直到最后子问题可以简单的直接求解，原问题的解即子问题的解的合并。</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://nonejou072.github.io/posts/%E5%8F%8C%E8%87%82%E5%8D%8F%E4%BD%9C%E8%B0%83%E7%A0%94/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://nonejou072.github.io/posts/%E5%8F%8C%E8%87%82%E5%8D%8F%E4%BD%9C%E8%B0%83%E7%A0%94/</guid>
-      <description>协作搬运 # On Screw Linear Interpolation for Point-to-Point Path Planning # IROS 2020</description>
       
     </item>
     
